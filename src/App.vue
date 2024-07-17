@@ -9,10 +9,10 @@
       <q-input
         filled
         v-model="name"
-        label="Your name *"
-        hint="Name and surname"
+        label="=ชื่อ *"
+        hint="ชื่อ-นามสกุล"
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type something']"
+        :rules="[ val => val && val.length > 0 || 'ทั้งหมด']"
       />
 
       <q-input
@@ -32,7 +32,8 @@
       <div>
         <q-btn label="Submit" type="submit" color="primary"/>
         <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
-      </div> <div>
+      </div>
+       <div>
         <q-btn label="Submit" type="submit" color="primary"/>
         <q-btn label="Reset" type="reset" color="primary" flat class="q-ml-sm" />
       </div>
